@@ -718,7 +718,7 @@ static UIImage * AFInflatedImageFromResponseWithDataAtScale(NSHTTPURLResponse *r
         }
     }
 
-#if TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH
+#if TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH || TARGET_OS_TV
     if (self.automaticallyInflatesResponseImage) {
         return AFInflatedImageFromResponseWithDataAtScale((NSHTTPURLResponse *)response, data, self.imageScale);
     } else {
