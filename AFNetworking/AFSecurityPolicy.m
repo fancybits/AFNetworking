@@ -23,7 +23,7 @@
 
 #import <AssertMacros.h>
 
-#if !TARGET_OS_IOS && !TARGET_OS_WATCH && !TARGET_OS_TV
+#if !TARGET_OS_IOS && !TARGET_OS_WATCH && !TARGET_OS_TV && !TARGET_OS_VISION
 static NSData * AFSecKeyGetData(SecKeyRef key) {
     CFDataRef data = NULL;
 
